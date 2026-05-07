@@ -14,14 +14,14 @@ app.use(cors());
 // routes
 app.use("/employee-api", employee);
 
-// use Render's PORT
+// Render assigns a dynamic port
 const port = process.env.PORT || 3000;
 
-// connect to MongoDB directly
+// connect to MongoDB directly (hard-coded URI with database name)
 async function connectDB() {
   try {
     await mongoose.connect(
-      "mongodb+srv://kurumaddali1201_db_user:AbhiSatvika@cluster0.vtf8kmj.mongodb.net/mydatabase"
+      "mongodb+srv://kurumaddali1201_db_user:AbhiSatvika@cluster0.vtf8kmj.mongodb.net/miniprojectdb"
     );
     console.log("✅ MongoDB connected");
     app.listen(port, () => console.log(`🚀 Server running on port ${port}`));
