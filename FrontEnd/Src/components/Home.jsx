@@ -1,5 +1,5 @@
 import {useContext} from 'react'
-import {counterContextObj} from '../contexts/ContextProvider'
+import {counterContextObj} from '../context/ContextProvider'
 import { useCounterStore } from '../store/CounterStore'
 
 function Home() {
