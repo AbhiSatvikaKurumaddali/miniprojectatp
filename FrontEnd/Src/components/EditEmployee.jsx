@@ -32,7 +32,7 @@ function EditEmployee() {
       try {
         //console.log(modifiedEmp);
         const res = await axios.put(
-          `https://atp-2.onrender.com/employee/${state._id}`,modifiedEmp,
+          `https://miniprojectatp-1.onrender.com/employee/${state._id}`,modifiedEmp,
         );
         if (res.status === 200) {
           //navigate to list of emp
