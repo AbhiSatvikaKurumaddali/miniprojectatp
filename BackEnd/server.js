@@ -20,11 +20,7 @@ const port = 3000;
 async function connectDB() {
   try {
     await mongoose.connect(
-      "mongodb+srv://kurumaddali1201_db_user:AbhiSatvika@cluster0.vtf8kmj.mongodb.net/mydatabase",
-      {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      }
+      "mongodb+srv://kurumaddali1201_db_user:AbhiSatvika@cluster0.vtf8kmj.mongodb.net/mydatabase"
     );
     console.log("✅ MongoDB connected");
     app.listen(port, () => console.log(`🚀 Server running on port ${port}`));
