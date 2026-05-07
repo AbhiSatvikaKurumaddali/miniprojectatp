@@ -19,7 +19,7 @@ let port=3000
 app.use("/employee-api", employee);
 async function connectDB(){
     try{
-        await connect(process.env.DB_url);
+        await connect(process.env.DB_URL);
         console.log("mongodb connected")
         app.listen(port,()=>console.log(`server running on ${port}`))
         
