@@ -24,7 +24,7 @@ let newCounter=useCounterStore((state)=>state.newCounter);
     try {
       setLoading(true);
       //make HTTP POST req
-      let res = await fetch("https://atp-2.onrender.com/employee-api/employee", {
+      let res = await fetch("https://miniprojectatp-1.onrender.com/employee", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newEmpObj)
