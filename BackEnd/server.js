@@ -11,7 +11,7 @@ const app = exp();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://atp-2opl.vercel.app"],
+    origin: ["http://localhost:5173"],
   })
 );
 
