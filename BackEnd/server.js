@@ -14,9 +14,10 @@ app.use(cors());
 // routes
 app.use("/employee-api", employee);
 
-const port = 3000;
+// use Render's PORT
+const port = process.env.PORT || 3000;
 
-// connect to MongoDB directly (no env vars)
+// connect to MongoDB directly
 async function connectDB() {
   try {
     await mongoose.connect(
@@ -26,7 +27,6 @@ async function connectDB() {
     app.listen(port, () => console.log(`🚀 Server running on port ${port}`));
   } catch (err) {
     console.error("❌ MongoDB connection error:", err.message);
-    process.exit(1);
   }
 }
 
