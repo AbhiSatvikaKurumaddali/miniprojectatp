@@ -9,13 +9,15 @@ import employeeRoutes from "./routes/employeeRoutes.js";
 dotenv.config();
 const app = express();
 
+
 app.use(cors({
-  origin: "https://miniprojectatp-2.onrender.com", // your frontend link
+  origin: "https://miniprojectatp-2.onrender.com", // Your FRONTEND URL
   credentials: true
 }));
 
 app.use(express.json());
 
+// ✅ Using MONGO_URI (matches your .env variable name)
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.error("MongoDB connection error:", err));
