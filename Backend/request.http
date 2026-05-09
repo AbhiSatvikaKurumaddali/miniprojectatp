@@ -25,7 +25,7 @@ Content-Type: application/json
 
 ### Create Employee (Authenticated)
 POST http://localhost:5000/api/employees
-Authorization: Bearer <your-JWT-token>
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZmVlNTNhODY2OWQ4Y2JkMDcxMWMyMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3ODMxMzAyNiwiZXhwIjoxNzc4MzE2NjI2fQ.rCkvsuOcKnchnJLiIKlM8Dh370-e854l8SDXFY6CSqg
 Content-Type: application/json
 
 {
