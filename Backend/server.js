@@ -8,17 +8,12 @@ dotenv.config();
 const app = express();
 
 app.use(express.json());
+app.use(cors({ origin: "https://miniprojectatp-2.onrender.com" }));
 
-app.use(cors({
-  origin: "https://miniprojectatp-2.onrender.com"
-}));
-
-// ✅ Connect MongoDB
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.error("MongoDB error:", err));
 
-// ✅ Mount routes
 app.use("/api/auth", authRoutes);
 
 const PORT = process.env.PORT || 5000;
