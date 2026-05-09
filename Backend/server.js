@@ -9,7 +9,12 @@ import employeeRoutes from "./routes/employeeRoutes.js";
 dotenv.config();
 const app = express();
 
-app.use(cors());
+
+app.use(cors({
+  origin: "https://miniprojectatp-2.onrender.com", 
+  credentials: true
+}));
+
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
