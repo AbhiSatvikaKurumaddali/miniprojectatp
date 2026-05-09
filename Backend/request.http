@@ -1,0 +1,49 @@
+### Register Admin
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "email": "admin@example.com",
+  "phone": "9876543210",
+  "password": "123456",
+  "role": "admin"
+}
+
+###
+
+### Login Admin
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "123456"
+}
+
+###
+
+### Create Employee (Authenticated)
+POST http://localhost:5000/api/employees
+Authorization: Bearer <your-JWT-token>
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "phone": "9998887777",
+  "role": "developer"
+}
+
+
+###
+
+### Get All Employees (Authenticated)
+GET http://localhost:5000/api/employees
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZmVlNTNhODY2OWQ4Y2JkMDcxMWMyMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3ODMxMzAyNiwiZXhwIjoxNzc4MzE2NjI2fQ.rCkvsuOcKnchnJLiIKlM8Dh370-e854l8SDXFY6CSqg
+
+###
+
+### Delete Employee (Admin Only)
+DELETE http://localhost:5000/api/employees/69fee7b58b7752c529ad6acb
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZmVlNTNhODY2OWQ4Y2JkMDcxMWMyMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3ODMxMzAyNiwiZXhwIjoxNzc4MzE2NjI2fQ.rCkvsuOcKnchnJLiIKlM8Dh370-e854l8SDXFY6CSqg
