@@ -23,7 +23,7 @@ Frontend/
 │── vite.config.js
 │── README.md
 
-
+---------------------
 
 React 19 – UI library
 
@@ -37,12 +37,12 @@ Vite – Fast build tool & dev server
 
 ESLint – Linting & code quality
 
-
+------------------------------------
 npm install
 
 npm run dev
 
-
+------------------------------------------
 
 All API calls are centralized in src/api.jsx using Axios.
 
@@ -50,7 +50,7 @@ Backend endpoints (e.g., /api/auth, /api/employees) are consumed here.
 
 Environment variable VITE_API_URL ensures flexibility between dev/prod.
 
-
-Use the backend’s request.http or Postman to verify API responses.
+----------------------------------------------------
+Use the backend’s request.http  to verify API responses.
 
 Frontend pages (Login, Register, Employees) are wired to backend routes.
