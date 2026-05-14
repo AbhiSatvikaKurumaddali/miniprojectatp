@@ -1,16 +1,56 @@
-# React + Vite
+Frontend/
+│── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   └── EmployeeForm.jsx
+│   │
+│   ├── pages/
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   └── Employees.jsx
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── api.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+│── .env
+│── .gitignore
+│── eslint.config.js
+│── index.html
+│── package.json
+│── vite.config.js
+│── README.md
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+React 19 – UI library
 
-## React Compiler
+React Router v7 – Routing & navigation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Axios – API requests
 
-## Expanding the ESLint configuration
+Tailwind CSS (via @tailwindcss/vite) – Styling framework
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Vite – Fast build tool & dev server
+
+ESLint – Linting & code quality
+
+
+npm install
+
+npm run dev
+
+
+
+All API calls are centralized in src/api.jsx using Axios.
+
+Backend endpoints (e.g., /api/auth, /api/employees) are consumed here.
+
+Environment variable VITE_API_URL ensures flexibility between dev/prod.
+
+
+Use the backend’s request.http or Postman to verify API responses.
+
+Frontend pages (Login, Register, Employees) are wired to backend routes.
