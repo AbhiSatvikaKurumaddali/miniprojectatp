@@ -36,7 +36,7 @@ Tailwind CSS (via @tailwindcss/vite) – Styling framework
 
 Vite – Fast build tool & dev server
 
-ESLint – Linting & code quality
+
 
 ------------------------------------
 npm install
