@@ -1,3 +1,4 @@
+```
 Frontend/
 │── src/
 │   ├── components/
@@ -22,7 +23,7 @@ Frontend/
 │── package.json
 │── vite.config.js
 │── README.md
-
+```
 ---------------------
 
 React 19 – UI library
